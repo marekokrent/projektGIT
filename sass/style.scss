@@ -1,0 +1,215 @@
+/* Variables */  
+$color-one: #2c5173;
+$color-two: #33d9b2;
+$color-three: #ff5252;
+$color-four: #ffffff;
+$color-five: #2c2c54;
+$color-six: #ffd700;
+$color-seven: #000000;
+$font-text: 'Lato', sans-serif;
+$font-nav: 'Meddon', cursive;
+$font-header: 'Lobster Two', cursive;
+
+body{
+    font-family: $font-text;
+    color: $color-seven;
+    margin: 0;
+}
+/* Header */
+header  {
+    height: 100vh;
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/3774044/pexels-photo-3774044.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-position: 50% 20%;
+    background-size: cover; 
+    background-attachment: fixed;
+    display: flex;
+}
+nav{
+    margin-left: auto;
+    margin-right: auto;  
+}
+.navigation{
+    margin: 0;
+    list-style-type: none;
+    li{
+        padding-right: 40px;
+        a{
+            text-decoration: none;
+            display: block;
+            color: $color-four;
+            &:hover{
+                color: $color-six;
+            }
+        }
+    }    
+}
+.logo{
+    font-family: $font-nav;
+    font-size: 40px;
+    color: $color-six;
+    text-decoration: none;
+    text-shadow: 6px  2px 1px #000000;
+}
+.logo-one{
+    padding-top: 40px;
+}
+
+.navigation-inner {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: $font-text; 
+    text-align: center;
+}
+.page-title {
+    color: $color-four;
+    font-size: 50px;
+    margin: 80px 0 0 0;
+    letter-spacing: 4px;
+    position: relative;
+    font-family: $font-header;
+}
+.page-subtitle {
+    color: $color-four;
+    font-size: 70px;
+    margin: 48px 0 0 0;
+    padding: 30px 0 0 0;
+}
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+.btn {
+    button{
+        border-radius: 5px;
+        background: $color-six;
+        color: $color-four;
+        padding: 20px 50px;
+        cursor: pointer;
+        font-family: $font-text;
+        font-size: 17px;
+        background-position: 100% 0;
+        background-size: 300%; 
+    }
+}
+/* Services */
+section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.serv{
+    text-align: center;
+    h1{
+        font-size: 40px;
+    }
+}
+p{
+    opacity: 0.3;
+    font-family: $font-header; 
+    font-size: 20px;  
+}
+.services{
+    .card-body{
+        text-align: center;
+        p{
+            opacity: 0.3;
+            font-family: $font-text;
+            font-size: 17px;
+        }
+        
+    }
+}
+.col-md-4{
+    .row{
+        justify-content: center;
+        padding: 15px;
+    }
+}
+.card{
+    .col-md-10{
+        max-width: 100%;
+    }
+}
+.pt-4{
+    text-align: center;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 50%;
+    padding: 9px;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    color: $color-six;
+    i{
+        font-size: 40px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+/* Portfolio */
+.portfolio{
+    background-color: #ffc0cb2a;
+    .row{
+        justify-content: center;
+        text-align: center;
+        .my-3{
+            padding: 30px 20px;
+            .portfolio-item{
+                background-color: $color-four;
+                padding-bottom: 15px;
+                img{
+                    width: 100%;
+                    height: 280px;
+                    object-fit: cover;
+                    transition: transform .2s;
+                    &:hover{
+                        transform: scale(1.2);
+                        transition: transform .2s;
+                    }
+                }
+            }
+        }
+    }
+}
+/* Footer */
+footer{
+    text-align: center;
+    width: 100%;
+    padding: 45px;
+    .social-item{
+        align-self: center;
+        padding: 0;
+        .social-media{
+            margin: 0 auto;
+            padding: 15px;
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            li{
+                font-size: 0;
+                padding-right: 10px;
+                i{
+                    font-size: 30px;
+                    color: $color-four;
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;   
+                    border-radius: 50%;
+                    text-align: center;   
+                    transition: transform .2s; 
+                    background-color: $color-seven;
+                    &:hover{
+                        transform: scale(1.5);
+                        transition: transform .2s;
+                    }
+                }
+            }
+        }
+    } 
+}
